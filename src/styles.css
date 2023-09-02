@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@tailwind base;
+@tailwind components;  
+@tailwind utilities;
+
+/* this is a css file, do NOT forget semicolons at end */
+.link{
+    @apply text-blue-500 hover:underline cursor-pointer;
+}
+
+.carousel{
+    @apply flex gap-4 justify-between lg:justify-start;
+}
+
+.card-dark{
+    @apply cursor-pointer transition-transform hover:scale-105 hover:drop-shadow-md pt-8 pl-10 pr-14 mt-5 rounded-2xl text-white bg-black whitespace-nowrap;
+}
+
+.card-light{
+    @apply cursor-pointer transition-transform hover:scale-105 hover:drop-shadow-md pt-8 pl-10 pr-14 mt-5 rounded-2xl text-neutral-500 bg-white whitespace-nowrap;
+}
+
+.new{
+    @apply text-xs text-orange-500; 
+}
+
+.card-tiny-text{
+    @apply text-xs uppercase mb-24;
+}
+
+.card-header{
+    @apply text-3xl font-bold whitespace-nowrap pr-6 ;
+}
+
+.card-subheading{
+    @apply text-lg;
+}
+
+.footer-link{
+    @apply hover:underline pt-2 hover:cursor-pointer;
+}
+
+.dropdown-menu{
+    @apply z-10 pl-80 pt-10 absolute pb-28 bg-white grid gap-40 grid-cols-5 justify-items-center;
+}
+
+.dropdown-li-bold{
+    @apply whitespace-nowrap font-bold text-2xl mb-2;
+}
+
+.dropdown-li-sm{
+    @apply whitespace-nowrap text-xs mb-2;
+}
+
+.accessories-card{
+    @apply transition-transform hover:scale-105 hover:drop-shadow-md pt-6 pr-12 mt-5 rounded-2xl text-neutral-500 bg-white whitespace-nowrap;
+}
